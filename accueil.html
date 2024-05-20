@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitez Paris</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+        .languages {
+            margin-top: 20px;
+        }
+        .languages button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue à Paris</h1>
+    </header>
+    <div class="container">
+        <p>Choisissez votre langue:</p>
+        <div class="languages">
+            <button onclick="changeLanguage('es')">Español</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('ar')">عربي</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('fr')">Français</button>
+        </div>
+        <div class="images">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Tour Eiffel">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Louvre_2007_02_24_c.jpg" alt="Musée du Louvre">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Cath%C3%A9drale_Notre-Dame_de_Paris%2C_France.jpg" alt="Notre-Dame de Paris">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Arc_de_Triomphe%2C_Paris_6_April_2014.jpg" alt="Arc de Triomphe">
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            alert("Langue sélectionnée : " + lang);
+        }
+    </script>
+</body>
+</html>
