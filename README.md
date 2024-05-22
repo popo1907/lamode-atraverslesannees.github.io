@@ -1,3 +1,3 @@
-# lamodea-taverslesannees.github.io
+# lamode-a-taverslesannees.github.io
 
 Website for NSI project
