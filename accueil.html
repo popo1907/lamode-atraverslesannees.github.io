@@ -3,71 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visitez Paris</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            text-align: center;
-            margin: 20px;
-        }
-        .languages {
-            margin-top: 20px;
-        }
-        .languages button {
-            margin: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .images img {
-            width: 300px;
-            height: 200px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-    </style>
+    <title>Histoire de la Mode</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue à Paris</h1>
+        <h1>Histoire de la Mode</h1>
+        <nav>
+            <ul>
+                <li><a href="annees20.html">Années 1920</a></li>
+                <li><a href="annees30.html">Années 1930</a></li>
+                <li><a href="annees40.html">Années 1940</a></li>
+                <li><a href="annees50.html">Années 1950</a></li>
+                <li><a href="annees60.html">Années 1960</a></li>
+                <li><a href="annees70.html">Années 1970</a></li>
+                <li><a href="annees80.html">Années 1980</a></li>
+                <li><a href="annees90.html">Années 1990</a></li>
+                <li><a href="annees2000.html">Années 2000</a></li>
+                <li><a href="annees2010.html">Années 2010</a></li>
+                <li><a href="annees2020.html">Années 2020</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <p>Choisissez votre langue:</p>
-        <div class="languages">
-            <button onclick="changeLanguage('es')">Español</button>
-            <button onclick="changeLanguage('en')">English</button>
-            <button onclick="changeLanguage('ar')">عربي</button>
-            <button onclick="changeLanguage('ru')">Русский</button>
-            <button onclick="changeLanguage('zh')">中文</button>
-            <button onclick="changeLanguage('fr')">Français</button>
-        </div>
-        <div class="images">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Tour Eiffel">
-        </div>
-    </div>
-
-    <script>
-        function changeLanguage(lang) {
-            alert("Langue sélectionnée : " + lang);
-        }
-    </script>
+    <main>
+        <section>
+            <h2>Bienvenue !</h2>
+            <p>Découvrez l'évolution de la mode à travers les décennies.</p>
+            <img src="images/fashion-history.jpg" alt="Histoire de la Mode">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Histoire de la Mode</p>
+    </footer>
 </body>
 </html>
